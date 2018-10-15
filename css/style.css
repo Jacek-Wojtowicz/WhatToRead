@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/book-1149031_1920.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  background-color: rgba(72, 72, 72, 0.6);
+  margin: 100px auto 0;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .row {
+    width: 75%;
+  }
+}
+
+@media (max-width: 568px) {
+  .row {
+    width: 100%;
+  }
+}
+
+.row h1 {
+  font-size: 50px;
+  padding: 40px 10px 30px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 568px) {
+  .row h1 {
+    font-size: 30px;
+  }
+}
+
+#fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 400px;
+}
+
+@media (max-width: 768px) {
+  #fields {
+    min-width: 0;
+  }
+}
+
+#fields #input-search {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  line-height: 20px;
+  padding: 12px 6px;
+  margin: 20px 0;
+  border: 1px solid black;
+}
+
+#fields #form-add {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 12px 0;
+}
+
+#fields #form-add .add-book {
+  line-height: 30px;
+  padding: 5px 10px 5px 0;
+}
+
+#fields #form-add .border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border: 1px solid black;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+#fields #form-add .border #input-add-book {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding: 5px;
+}
+
+#fields #form-add .border span {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+#fields #form-add .border span #btn-submit {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0 10px;
+}
+
+.sort {
+  padding: 12px 0;
+}
+
+.sort label {
+  line-height: 30px;
+  padding: 5px 45px 5px 0;
+}
+
+.sort select {
+  width: 150px;
+  padding: 5px;
+  color: #393939;
+  border: 1px solid black;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  background: #5b5b5b url("../img/down.png") no-repeat 95% center;
+}
+
+.sort select:focus:hover {
+  color: white;
+  border: 1px solid white;
+  background: #2e323a url("../img/up.png") no-repeat 95% center;
+}
+
+.main-list {
+  width: 100%;
+  margin: 50px 0;
+  position: relative;
+}
+
+.main-list li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px;
+  line-height: 30px;
+}
+
+.main-list li button {
+  padding: 0 30px;
+  line-height: 30px;
+}
+
+.main-list:after {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #feeb53;
+  opacity: 0.5;
+  width: calc(100% - 40px);
+  top: -10px;
+  left: calc((100% - (100% - 40px)) / 2);
+}
+
+input {
+  background-color: #5b5b5b;
+  border: none;
+  color: white;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+input:focus {
+  background-color: #2e323a;
+}
+
+span.title {
+  color: white;
+}
+
+.btn {
+  position: relative;
+  background-color: #2e323a;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #feeb53;
+  color: #2e323a;
+}
+/*# sourceMappingURL=style.css.map */

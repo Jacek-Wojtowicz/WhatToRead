@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">books to read</h1>
+            <div id="fields">
+                <input type="text" id="input-search" placeholder="Search...">
+                <form id="form-add">
+                    <label for="book-title" class="add-book">Add book:</label>
+                    <div class="border">
+                        <input type="text" id="input-add-book" placeholder="Add Item">
+                        <span><button id="btn-submit" class="btn" type="submit">Submit</button></span>
+                    </div>
+                </form>
+                <div class="sort">
+                    <label for="sort-book" class="sort-book">Sort:</label>
+                    <select id="select-sort">
+                        <option value="none">---</option>
+                        <option value="a-z">A-Z</option>
+                        <option value="z-a">Z-A</option>
+                    </select>
+                </div>
+            </div>
+            <div class="main-list">
+                <ul id="books">
+                    <li>
+                        <span class="title">The Hunger Games</span>
+                        <button class="btn btn-remove">Remove</button>
+                    </li>
+                    <li>
+                        <span class="title">A song of Ice and Fire</span>
+                        <button class="btn btn-remove">Remove</button>
+                    </li>
+                    <li>
+                        <span class="title">Catching Fire</span>
+                        <button class="btn btn-remove">Remove</button>
+                    </li>
+                    <li>
+                        <span class="title">The Book Thief</span>
+                        <button class="btn btn-remove">Remove</button>
+                    </li>
+                    <li>
+                        <span class="title">The Road</span>
+                        <button class="btn btn-remove">Remove</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src=" js/script.js"> </script>
+</body>
+
+</html>
